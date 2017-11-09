@@ -1,0 +1,215 @@
+/* large screen to extra large: from 992px to 1200px */
+@media only screen and (max-width: 1200px) {
+  /* *************** */
+  /* Main body */
+  /* *************** */
+  .g-body .project{
+    /* height: 60vh; */
+  }
+}
+
+/* Medium tablets to large screen: from 768px to 991px */
+@media only screen and (max-width: 991px) {
+
+  /* *************** */
+  /* public use */
+  /* *************** */
+
+  h2 {
+    font-size: 4em;
+    padding-bottom: 1.5em;
+  }
+
+  /* *************** */
+  /* header */
+  /* *************** */
+
+  .g-nav .dz-logo {
+    width: 150px;
+    height: 30px;
+  }
+
+  .g-nav li a {
+    font-size: 1.3em;
+  }
+
+  /* *************** */
+  /* Main body */
+  /* *************** */
+  .g-body .project{
+    height: 60vh;
+  }
+  
+  /* *************** */
+  /* footer */
+  /* *************** */
+  .g-footer {
+    margin-top: 5em;
+    font-size: .8em;
+  }
+}
+/* Small phones to small tablets: from 576px to 767px */
+@media only screen and (max-width: 768px) {
+  
+  /* *************** */
+  /* public use */
+  /* *************** */
+  h1 {
+    font-size: 4.8em;
+  }
+
+  h2 {
+    font-size: 3em;
+    padding-bottom: .7em;
+  }
+
+  /* *************** */
+  /* Main body */
+  /* *************** */
+  .g-body .project{
+    height: 40vh;
+  }
+  
+  /* *************** */
+  /* footer */
+  /* *************** */
+  .g-footer {
+    font-size: 1em;
+  }
+}
+
+/* Small phones: from 421px to 575px */
+@media only screen and (max-width: 575px) {
+
+  /* *************** */
+  /* public use */
+  /* *************** */
+  h1 {
+    font-size: 3.8em;
+  }
+
+  h2 {
+    font-size: 2em;
+    padding-bottom: .3em;
+  }
+
+  /* *************** */
+  /* header */
+  /* *************** */
+
+  .g-nav {
+    margin-top: 0;
+  }
+
+  .g-nav .logoWrapper {
+    z-index: 1;
+  }
+
+  .g-nav .dz-logo{
+    width: 125px;
+    height: 25px;
+  }
+
+  /* mobile menu icon */
+  .g-nav .nav-toggle {
+    position: absolute;
+    width: 1.6rem;
+    height: 1.6rem;
+    right: .8rem;
+    margin-top: .2rem;
+    z-index: 1;
+  }
+
+  .g-nav .nav-toggle i,
+  .g-nav .nav-toggle i::before,
+  .g-nav .nav-toggle i::after {
+    position: absolute;
+    width: 1rem;
+    height: .15rem;
+    background-color: #3b3b3b;
+    transition: .3s;
+  }
+  
+  .g-nav .nav-toggle i {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .g-nav .nav-toggle i::before {
+    content: '';
+    top: -.3rem;
+  }
+
+  .g-nav .nav-toggle i::after {
+    content: '';
+    top: .3rem;
+  }
+
+  /* mobile menu list */
+  .g-nav .nav-list {
+    position: fixed;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    font-size: .9rem;
+    opacity: 0;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease-in-out;
+  }
+
+  .g-nav .nav-list ul{
+    display: inline-block;
+  }
+
+  .g-nav .nav-list li{
+    padding: 1rem;
+  }
+
+  .g-nav li a{
+    margin-right: 0;
+  }
+
+  .g-nav .nav-list-visible {
+    opacity: 1;
+    visibility: visible;
+    background-color: #fff;
+  }
+
+  /* *************** */
+  /* Main body */
+  /* *************** */
+  .g-body .project{
+    height: 30vh;
+  }
+}
+
+/* Small phones: from 0 to 420px (iPhone 4 to iPhone 6+)*/ 
+@media only screen and (max-width: 420px) {
+  
+  /* *************** */
+  /* public use */
+  /* *************** */
+  h1 {
+    font-size: 2.8em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+    padding-bottom: .1em;
+  }
+
+  /* *************** */
+  /* footer */
+  /* *************** */
+  .g-footer {
+    font-size: 1em;
+  }
+
+}
+

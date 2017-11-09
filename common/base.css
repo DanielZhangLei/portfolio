@@ -1,9 +1,9 @@
 /* ----------------------------------------------- */
 /* RESET */
 /* ----------------------------------------------- */
-h1, h3, h4 {margin: 0}
-body {font:normal 14px/1.5 arial,\5b8b\4f53;}
-a, a:hover{text-decoration:none;}
+h1, p{margin: 0}
+body{font:normal 12px/1.5 arial,\5b8b\4f53;}
+a, a:hover{text-decoration:none; color: #3b3b3b;}
 ul,ol {margin:0; padding:0; list-style:none;}
 
 
@@ -11,14 +11,14 @@ ul,ol {margin:0; padding:0; list-style:none;}
 /* REUSABLE COMPONENTS */
 /* ----------------------------------------------- */
 .clearfix:after{
-  content:"";
-  display:block;
-  clear:both;
-  height:0;
-  overflow:hidden;
-  visibility:hidden;
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
 }
 
 .clearfix{
-  zoom:1;
+  zoom: 1;
 }

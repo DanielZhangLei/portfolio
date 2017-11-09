@@ -1,0 +1,119 @@
+/* *************** */
+/* Public use */
+/* *************** */
+html {
+  font-size: 20px;
+}
+
+body {
+  font: 400 14px 'Lato', sans-serif;
+  color: #3b3b3b;
+}
+
+h1, 
+h2 {
+  width: 100%;
+  font-weight: 900;
+  background: -webkit-linear-gradient(#09c6a2, #38ef7d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #38ef7d;
+  /* transition: font-size .5s; */
+}
+
+h1 {
+  font-size: 7em;
+  padding-top: 1em;
+  padding-bottom: 1.8em;
+}
+
+h2 {
+  font-size: 5em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+  
+.noscroll {
+  overflow: hidden;
+}
+
+/* *************** */
+/* Header */
+/* *************** */
+.g-nav {
+  margin-top: 2em;
+  background-color: #fff;
+}
+
+.g-nav .logoWrapper {
+  margin-right: 0;
+}
+
+.g-nav li a {
+  font-size: 1.5em;
+  font-weight: 700;
+  padding-bottom: .5em;
+  margin-right: 1.5em;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom .3s;
+}
+
+.g-nav li a:hover {
+  border-bottom: 2px solid #09c6a2;
+}
+
+.g-nav .nav-toggle.close-x i {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.g-nav .nav-toggle.close-x i::before {
+  transform: translateY(0.3rem) rotate(45deg) scaleX(1.1);
+}
+
+.g-nav .nav-toggle.close-x i::after {
+  transform: translateY(-0.3rem) rotate(-45deg) scaleX(1.1);
+}
+
+
+/* *************** */
+/* Main body */
+/* *************** */
+.g-body {
+  padding-top: 2rem;
+}
+
+.g-body .project {
+  display: block;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(../img/body/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  border-radius: .5rem;
+  margin-bottom: 2rem;
+  /* transition: height .8s; */
+}
+
+
+/* *************** */
+/* Footer */
+/* *************** */
+
+.g-footer,
+.g-footer .group {
+  height: 5em;
+}
+
+.g-footer {
+  margin-top: 4em;
+  margin-bottom: 2em;
+  /* transition: font-size .5s; */
+}
+
+.g-footer .socialIcon li {
+  display: inline-block;
+  padding: 8px;
+}
+
+
+
