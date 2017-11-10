@@ -11,14 +11,18 @@ body {
 }
 
 h1, 
+h2, 
+h3 { 
+  transition: font-size .6s; 
+}
+
+h1, 
 h2 {
-  width: 100%;
   font-weight: 900;
   background: -webkit-linear-gradient(#09c6a2, #38ef7d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #38ef7d;
-  /* transition: font-size .5s; */
 }
 
 h1 {
@@ -33,7 +37,14 @@ h2 {
   padding-bottom: 2em;
 }
 
-  
+h3 {
+  font-weight: 400;
+  max-width: 16em;
+  word-spacing: .2rem;
+  letter-spacing: .05rem;
+  text-transform: uppercase;
+}
+
 .noscroll {
   overflow: hidden;
 }
@@ -83,22 +94,42 @@ h2 {
   padding-top: 2rem;
 }
 
+.g-body a{
+  color: #fff;
+}
+
 .g-body .project {
   display: block;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(../img/body/hero.jpg);
   background-size: cover;
   background-position: center;
   height: 70vh;
   border-radius: .5rem;
   margin-bottom: 2rem;
-  /* transition: height .8s; */
+  transition: height .8s;
 }
 
+.g-body .project-logo {
+  position: relative;
+  max-height: 5em;
+  top: 1em;
+  left: 1em;
+  transition: max-height .5s;
+}
+
+.g-body .project-title {
+  position: relative;
+  top: 20%;
+  left: 2em;
+}
+
+/* *************** omnifood project *************** */
+.g-body .project-omnifood {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/body/omnifood-bg.jpg);
+}
 
 /* *************** */
 /* Footer */
 /* *************** */
-
 .g-footer,
 .g-footer .group {
   height: 5em;
@@ -107,7 +138,7 @@ h2 {
 .g-footer {
   margin-top: 4em;
   margin-bottom: 2em;
-  /* transition: font-size .5s; */
+  transition: font-size .5s;
 }
 
 .g-footer .socialIcon li {

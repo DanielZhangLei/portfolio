@@ -1,10 +1,26 @@
 /* large screen to extra large: from 992px to 1200px */
 @media only screen and (max-width: 1200px) {
   /* *************** */
+  /* public use */
+  /* *************** */
+  h1 {
+    font-size: 5.7em;
+  }
+
+  /* *************** */
   /* Main body */
   /* *************** */
-  .g-body .project{
-    /* height: 60vh; */
+  .g-body .project {
+    height: 60vh;
+  }
+
+  .g-body .project-logo {
+    max-height: 4em;
+  }
+
+  .g-body .project-title {
+    font-size: 2em;
+    word-spacing: .18rem;
   }
 }
 
@@ -14,6 +30,9 @@
   /* *************** */
   /* public use */
   /* *************** */
+  h1 {
+    font-size: 5.2em;
+  }
 
   h2 {
     font-size: 4em;
@@ -37,7 +56,16 @@
   /* Main body */
   /* *************** */
   .g-body .project{
-    height: 60vh;
+    height: 50vh;
+  }
+
+  .g-body .project-logo {
+    max-height: 3em;
+  }
+
+  .g-body .project-title {
+    font-size: 1.5em;
+    word-spacing: .03rem;
   }
   
   /* *************** */
@@ -68,6 +96,15 @@
   /* *************** */
   .g-body .project{
     height: 40vh;
+  }
+
+  .g-body .project-logo {
+    max-height: 2.5em;
+  }
+
+  .g-body .project-title {
+    font-size: 1.4em;
+    word-spacing: .006rem;
   }
   
   /* *************** */
@@ -185,8 +222,10 @@
   /* Main body */
   /* *************** */
   .g-body .project{
-    height: 30vh;
+    height: 40vh;
   }
+
+  
 }
 
 /* Small phones: from 0 to 420px (iPhone 4 to iPhone 6+)*/ 
@@ -200,15 +239,34 @@
   }
 
   h2 {
-    font-size: 1.6em;
+    font-size: 1.4em;
     padding-bottom: .1em;
+  }
+
+  /* *************** */
+  /* Main body */
+  /* *************** */
+
+  .g-body .project{
+    height: 30vh;
+  }
+
+  .g-body .project-logo {
+    max-height: 1.7em;
+  }
+
+  .g-body .project-title {
+    font-size: 1em;
+    word-spacing: .03rem;
+    letter-spacing: .01rem;
+    left: 2.5em;
   }
 
   /* *************** */
   /* footer */
   /* *************** */
   .g-footer {
-    font-size: 1em;
+    font-size: .7em;
   }
 
 }

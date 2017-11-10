@@ -1,7 +1,7 @@
 /* ----------------------------------------------- */
 /* RESET */
 /* ----------------------------------------------- */
-h1, p{margin: 0}
+h1, h2, h3, p{margin: 0;}
 body{font:normal 12px/1.5 arial,\5b8b\4f53;}
 a, a:hover{text-decoration:none; color: #3b3b3b;}
 ul,ol {margin:0; padding:0; list-style:none;}
