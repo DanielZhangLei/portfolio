@@ -1,0 +1,278 @@
+/* large screen to extra large: from 992px to 1200px */
+@media only screen and (max-width: 1200px) {
+  /* *************** */
+  /* common use */
+  /* *************** */
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  /* *************** */
+  /* main body */
+  /* *************** */
+  .g-body .project {
+    height: 300px;
+  }
+
+  .g-body .project-logo {
+    height: 3.2rem;
+  }
+
+  .g-body .project-title {
+    font-size: 1.6rem;
+  }
+}
+
+/* Medium tablets to large screen: from 768px to 991px */
+@media only screen and (max-width: 991px) {
+
+  /* *************** */
+  /* common use */
+  /* *************** */
+  h1 {
+    font-size: 4.2rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  /* *************** */
+  /* header */
+  /* *************** */
+
+  .g-header .dz-logo {
+    width: 150px;
+    height: 30px;
+  }
+
+  .g-header li a {
+    font-size: 1.05rem;
+  }
+
+  /* *************** */
+  /* main body */
+  /* *************** */
+  .g-body .project{
+    height: 250px;
+  }
+
+  .g-body .project-logo {
+    height: 2.4rem;
+    top: .6rem;
+    left: .6rem;
+  }
+
+  .g-body .project-title {
+    font-size: 1.2rem;
+  }
+  
+  /* *************** */
+  /* footer */
+  /* *************** */
+  .g-footer {
+    font-size: .5rem;
+  }
+}
+/* Small phones to small tablets: from 576px to 767px */
+@media only screen and (max-width: 767px) {
+  
+  /* *************** */
+  /* common use */
+  /* *************** */
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+  
+  /* *************** */
+  /* header */
+  /* *************** */
+
+  /* mobile menu icon */
+  .g-header .nav-toggle {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    right: 1.6px;
+    z-index: 1;
+  }
+
+  .g-header .nav-toggle i{
+    position: absolute;
+    width: 19px;
+    height: 3px;
+    background-color: #3b3b3b;
+    opacity: 1;
+    left: 6px;
+  }
+  
+  .g-header .nav-toggle i:nth-of-type(1) {
+    top: 10px;
+    transition: transform .3s;
+  }
+
+  .g-header .nav-toggle i:nth-of-type(2) {
+    top: 15px;
+    transform-origin: 0 0;
+    transition: opacity .2s ease-in-out;
+  }
+
+  .g-header .nav-toggle i:nth-of-type(3) {
+    top: 20px;
+    transition: transform .3s;
+  }
+
+  .g-header .close-x i:nth-of-type(1) {
+    transform: translateY(5px) rotate(45deg) scaleX(1);
+  }
+
+  .g-header .close-x i:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .g-header .close-x i:nth-of-type(3) {
+    transform: translateY(-5px) rotate(-45deg) scaleX(1);
+  }
+
+  /* mobile menu list */
+  .g-header .nav-list {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    visibility: hidden;
+    opacity: 0;
+    background-color: #fff;
+    transition: opacity .2s ease, visibility .2s ease;
+  }
+
+  .g-header .nav-list ul{
+    margin: auto;
+  }
+
+  .g-header .nav-list li{
+    padding: 20px;
+  }
+
+  .g-header li a{
+    margin-right: 0;
+  }
+
+  .g-header .nav-list-visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* *************** */
+  /* main body */
+  /* *************** */
+  .g-body .project{
+    height: 200px;
+  }
+
+  .g-body .project-logo {
+    height: 2rem;
+    top: .4rem;
+    left: .4rem;
+  }
+
+  .g-body .project-title {
+    font-size: 1rem;
+  }
+  
+  /* *************** */
+  /* footer */
+  /* *************** */
+  .g-footer {
+    font-size: .6rem;
+  }
+}
+
+/* Small phones: from 421px to 575px */
+@media only screen and (max-width: 575px) {
+
+  /* *************** */
+  /* common use */
+  /* *************** */
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  /* *************** */
+  /* header */
+  /* *************** */
+  .g-header .dz-logo{
+    width: 125px;
+    height: 25px;
+  }
+
+  /* *************** */
+  /* main body */
+  /* *************** */
+  .g-body .project{
+    height: 150px;
+  }
+
+  .g-body .project-logo {
+    height: 1.6rem;
+    top: .4rem;
+    left: .4rem;
+  }
+
+  .g-body .project-title {
+    font-size: .8rem;
+  }
+}
+
+/* Small phones: from 0 to 420px (iPhone 4 to iPhone 6+)*/ 
+@media only screen and (max-width: 420px) {
+  
+  /* *************** */
+  /* common use */
+  /* *************** */
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  /* *************** */
+  /* main body */
+  /* *************** */
+
+  .g-body .project{
+    height: 150px;
+  }
+
+  .g-body .project-logo {
+    height: 1.4rem;
+    top: .3rem;
+    left: .3rem;
+  }
+
+  .g-body .project-title {
+    font-size: .8rem;
+  }
+
+  /* *************** */
+  /* footer */
+  /* *************** */
+  .g-footer {
+    font-size: 0.5rem;
+  }
+
+}
+

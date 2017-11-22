@@ -1,19 +1,19 @@
 /* *************** */
 /* Public use */
 /* *************** */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
 html {
   font-size: 20px;
 }
 
 body {
-  font: 400 14px 'Lato', sans-serif;
+  font: 400 12px 'Lato', sans-serif;
   color: #3b3b3b;
-}
-
-h1, 
-h2, 
-h3 { 
-  transition: font-size .6s; 
 }
 
 h1, 
@@ -26,23 +26,15 @@ h2 {
 }
 
 h1 {
-  font-size: 7em;
-  padding-top: 1em;
-  padding-bottom: 1.8em;
+  font-size: 5.6rem;
 }
 
 h2 {
-  font-size: 5em;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  font-size: 4rem;
 }
 
 h3 {
   font-weight: 400;
-  max-width: 16em;
-  word-spacing: .2rem;
-  letter-spacing: .05rem;
-  text-transform: uppercase;
 }
 
 .noscroll {
@@ -52,74 +44,76 @@ h3 {
 /* *************** */
 /* Header */
 /* *************** */
-.g-nav {
-  margin-top: 2em;
+.g-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 1rem;
   background-color: #fff;
+  z-index: 9999;
 }
 
-.g-nav .logoWrapper {
-  margin-right: 0;
+.g-header .dz-logo {
+  position: relative;
+  width: 8.75rem;
+  height: 1.75rem;
+  z-index: 1;
+  transition: font-size .3s;
 }
 
-.g-nav li a {
-  font-size: 1.5em;
+.g-header li a {
+  font-size: 0.9rem;
   font-weight: 700;
-  padding-bottom: .5em;
-  margin-right: 1.5em;
+  padding-bottom: 0.3rem;
+  margin-left: 0.9rem;
   border-bottom: 2px solid transparent;
   transition: border-bottom .3s;
 }
 
-.g-nav li a:hover {
+.g-header li a:hover {
   border-bottom: 2px solid #09c6a2;
 }
-
-.g-nav .nav-toggle.close-x i {
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.g-nav .nav-toggle.close-x i::before {
-  transform: translateY(0.3rem) rotate(45deg) scaleX(1.1);
-}
-
-.g-nav .nav-toggle.close-x i::after {
-  transform: translateY(-0.3rem) rotate(-45deg) scaleX(1.1);
-}
-
 
 /* *************** */
 /* Main body */
 /* *************** */
 .g-body {
-  padding-top: 2rem;
+  padding-top: 9rem;
 }
 
-.g-body a{
+.g-body h1 {
+  padding-bottom: 6rem;
+}
+
+.g-body a {
   color: #fff;
 }
 
 .g-body .project {
+  position: relative;
   display: block;
-  background-size: cover;
-  background-position: center;
-  height: 70vh;
+  height: 400px;
   border-radius: .5rem;
   margin-bottom: 2rem;
-  transition: height .8s;
+  background-size: cover;
+  background-position: center;
 }
 
 .g-body .project-logo {
-  position: relative;
-  max-height: 5em;
-  top: 1em;
-  left: 1em;
-  transition: max-height .5s;
+  position: absolute;
+  height: 4rem;
+  top: .8rem;
+  left: .8rem;
 }
 
 .g-body .project-title {
-  position: relative;
-  top: 20%;
-  left: 2em;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  word-spacing: .16rem;
+  letter-spacing: .04rem;
+  text-transform: uppercase;
 }
 
 /* *************** omnifood project *************** */
@@ -130,15 +124,9 @@ h3 {
 /* *************** */
 /* Footer */
 /* *************** */
-.g-footer,
-.g-footer .group {
-  height: 5em;
-}
-
 .g-footer {
-  margin-top: 4em;
-  margin-bottom: 2em;
-  transition: font-size .5s;
+  padding-top: 4rem;
+  padding-bottom: 1.5rem;
 }
 
 .g-footer .socialIcon li {
