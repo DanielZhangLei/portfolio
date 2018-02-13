@@ -16,7 +16,7 @@ body {
   color: #3b3b3b;
 }
 
-h1, 
+h1,
 h2 {
   font-weight: 900;
   background: -webkit-linear-gradient(#09c6a2, #38ef7d);
@@ -119,6 +119,11 @@ h3 {
 /* *************** omnifood project *************** */
 .g-body .project-omnifood {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/body/omnifood-bg.jpg);
+}
+
+/* *************** inspiration project *************** */
+.g-body .project-inspiration {
+  background-image: url(../img/body/inspiration-bg.png);
 }
 
 /* *************** */
